@@ -43,12 +43,12 @@ function App() {
           setFilteredTodos(todos);
       }
     };
-    filterHandler();
     saveLocalTodos();
+    filterHandler();
   }, [todos, status]);
 
   return (
-    <div className="App">
+    <div>
       <header>
         <h1>Todo List</h1>
       </header>

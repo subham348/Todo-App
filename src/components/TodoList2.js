@@ -6,13 +6,7 @@ function TodoList2({ todos, setTodos, filteredTodos }) {
     <div className="todo-container">
       <ul className="todo-list">
         {filteredTodos.map((todo) => (
-          <Todo2
-            todos={todos}
-            todo={todo}
-            setTodos={setTodos}
-            key={todo.id}
-            text={todo.text}
-          />
+          <Todo2 todos={todos} todo={todo} setTodos={setTodos} key={todo.id} />
         ))}
       </ul>
     </div>
